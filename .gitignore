@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+.DS_Store
+
+# Secrets
+*.key
+*.pem
+
+# Local database / data files
+*.csv
+*.json
+*.parquet
+
+# IDE
+.vscode/
+.idea/
