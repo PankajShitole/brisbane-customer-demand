@@ -23,3 +23,6 @@ logs/
 # IDE
 .vscode/
 .idea/
+
+# dbt local credentials
+dbt/profiles.yml
