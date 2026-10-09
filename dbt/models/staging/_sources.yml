@@ -1,0 +1,20 @@
+sources:
+  - name: brisbane_open_data
+    description: "Brisbane City Council customer enquiry data loaded using Python"
+    schema: raw
+    tables:
+      - name: customer_enquiries
+        description: "Raw customer enquiry observations from the council API."
+        columns:
+          - name: date
+            description: "Date associated with the enquiry observation."
+          - name: channel
+            description: "Channel through which the enquiry was recorded."
+          - name: work_site
+            description: "Council work site associated with the observation."
+          - name: category
+            description: "Enquiry category."
+          - name: service
+            description: "Council service associated with the observation."
+          - name: volume
+            description: "Number of enquiries represented by this observation."

@@ -1,0 +1,30 @@
+version: 2.0
+
+models:
+  - name: stg_customer_enquiries
+    description: "Cleaned staging view of Brisbane City Council customer enquiries."
+    columns:
+      - name: enquiry_date
+        description: "Date associated with the aggregated enquiry observations."
+        data_tests:
+          - not_null
+
+      - name: channel
+        data_tests:
+          - not_null
+
+      - name: work_site
+        data_tests:
+          - not_null
+
+      - name: category
+        data_tests:
+          - not_null
+
+      - name: service
+        data_tests:
+          - not_null
+
+      - name: volume
+        data_tests:
+          - not_null
