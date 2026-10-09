@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_monthly_demand_by_channel
+    description: >
+      Monthly enquiry volume aggregated by contact channel.
+      Each row represents one calendar month and channel.
+
+    columns:
+      - name: month_start
+        description: First day of the calendar month.
+        data_tests:
+          - not_null
+
+      - name: channel
+        description: Customer contact channel.
+        data_tests:
+          - not_null
+
+      - name: total_enquiry_volume
+        description: Sum of source enquiry volume for the month and channel.
+        data_tests:
+          - not_null
