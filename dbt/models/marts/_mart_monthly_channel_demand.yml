@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: mart_monthly_channel_demand
+    description: >
+      Monthly enquiry volume by contact channel, including total monthly
+      volume and each channel's percentage share of that monthly total.
+      Each row represents one calendar month and channel.
+
+    columns:
+      - name: month_start
+        description: First day of the calendar month.
+        data_tests:
+          - not_null
+
+      - name: channel
+        description: Customer contact channel.
+        data_tests:
+          - not_null
+
+      - name: total_enquiry_volume
+        description: Enquiry volume attributed to this channel during the month.
+        data_tests:
+          - not_null
+
+      - name: total_monthly_enquiry_volume
+        description: Total enquiry volume across all channels for the month.
+        data_tests:
+          - not_null
+
+      - name: channel_share_pct
+        description: Percentage of monthly enquiry volume attributed to this channel.
+        data_tests:
+          - not_null
